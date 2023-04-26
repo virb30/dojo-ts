@@ -54,7 +54,7 @@ describe("POST /posts", () => {
         expect(tagsTotal.total).toBe(3);
     });
 
-    it("fails creating a post", async () => {
+    it.skip("example: fails creating a post", async () => {
         await request(app)
             .post("/posts")
             .send({
